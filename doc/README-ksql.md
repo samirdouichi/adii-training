@@ -1,45 +1,16 @@
 # Online merchant monitor
 
-An example about online merchant monitor based on Kafka, Kafka Stream, Kafka Connect,KSQL
-
-![Flow](https://github.com/uuhnaut69/online-merchant-monitor/blob/main/images/ETL-Flow.png)
-
-![DemoChart](https://github.com/uuhnaut69/online-merchant-monitor/blob/main/images/OrderDishCount.png)
-
-## Prerequisites
-
-- `Java 11+`
-- `Docker`
-- `Docker-compose`
-
-## Setup
-
-- Start env
-
-```shell
-docker-compose up -d
-```
-
-- Check health
-
-```shell
-docker-compose ps
-```
-
-- Create superset user
-
-```shell
-docker exec -it superset superset fab create-admin \
-               --username admin \
-               --firstname Superset \
-               --lastname Admin \
-               --email admin@superset.com \
-               --password admin
-```
+Surveillance en ligne des restaurants  basée sur Kafka, Kafka Connect, KSQL.
+![](images/im3.png)
+ 
 - create sql script
 
 ```shell
 $ docker exec -it 619757386dfc sh
+
+```
+619757386dfc est l 'image id de postgresql
+```shell
 
 # psql -U postgres
 psql (9.6.22)
@@ -59,25 +30,14 @@ docker exec -it superset superset db upgrade
 docker exec -it superset superset init
 ```
 
-Access `Superset` via `http://localhost:9669`
+Accedez a `Superset` via `http://localhost:9669`
 
-## Get Started
-
-Connect to KSQL Server
-
+## Connect to KSQL Server
 ```shell
 docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
 ```
 
-Create kafka connector
-Synopsis
-
-CREATE SOURCE | SINK CONNECTOR [IF NOT EXISTS] connector_name WITH( property_name = expression [, ...]);
-Description
-
-Create a new connector in the Kafka Connect cluster with the configuration passed in the WITH clause. Some connectors have ksqlDB templates that simplify configuring them. For more information, see Natively Supported Connectors.
-
-If the IF NOT EXISTS clause is present, the statement does not fail if a connector with the supplied name already exists
+## Create le connecteur kafka 
 
 ```sql
 CREATE
@@ -103,7 +63,7 @@ WITH (
 );
 ```
 
-Set offset to earliest
+Set offset a earliest
 
 ```sql
 SET 'auto.offset.reset' = 'earliest';
@@ -164,18 +124,13 @@ cd datagen && ./mvn spring-boot:run
 
 Create ORDERSTREAMS KStream
 
-Synopsis¶
 
-CREATE [OR REPLACE] [SOURCE] STREAM [IF NOT EXISTS] stream_name
-( { column_name data_type [KEY | HEADERS | HEADER(key)] } [, ...] )
-WITH ( property_name = expression [, ...] );
+Créez un nouveau flux avec les colonnes et les propriétés spécifiées.
 
-Description
-Create a new stream with the specified columns and properties.
-
-Creating a stream registers it on an underlying Apache Kafka® topic, 
-so you can use SQL statements to perform operations like joins and aggregations on the topic's data.
-The stream is said to be backed by the topic.
+La création d'un flux l'enregistre sur le topic Apache Kafka sous-jacent,
+Vous pouvez donc utiliser des instructions SQL pour effectuer des opérations telles que des 
+jointures et des agrégations sur les données du topic. On dit que le flux est soutenu par le
+topic.
 
 ```sql
 CREATE
@@ -202,7 +157,7 @@ Name                 : ORDERSTREAMS
 -------------------------------------------------------------
 ```
 
-Flatten order streams and enrich with restaurant info (1)
+Aplatissez les flux de commandes et enrichissez-les avec des informations sur les restaurants (1).
 
 ```sql
 create
@@ -222,10 +177,7 @@ from ORDERSTREAMS o
     cast(o.RESTAURANT_ID as STRING) = r.ROWKEY partition by o.ORDER_ID emit changes;
 ```
 
-Enrich (1) downstream with dish info
-
-Currently KSQLDB aggregate_functions COLLECT_SET() not support MAP, STRUCT, ARRAY types so we need convert complex
-column to VARCHAR/STRING
+Enrichir la requette (1)  avec des informations sur les plats
 
 ```sql
 create
@@ -254,7 +206,7 @@ from ORDER_WITH_RESTAURANT owr
     cast(owr.ORDER_LINE -> DISH_ID as STRING) = d.ROWKEY partition by owr.ORDER_ID emit changes;
 ```
 
-Aggregate orders of each dish per 30 seconds
+Aggregate orders pour chaque plat per 30 seconds
 
 ```sql
 create table dish_order_30seconds_report
@@ -359,6 +311,7 @@ limit 1;
 ```
 
 Result
+![](images/OrderDishCount.png)
 
 ```sql
 +----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
@@ -384,8 +337,8 @@ Connect Superset to Citus
 postgresql://merchant:merchant@citus:5432/merchant
 ```
 
--- See the list of streams currently registered:
+-- Voir la liste des flux actuellement enregistrés :
 SHOW STREAMS;
 
--- See extended information about currently registered streams:
+-- Voir les informations étendues sur les flux actuellement enregistrés :
 LIST STREAMS EXTENDED; 

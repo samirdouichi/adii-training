@@ -20,6 +20,18 @@
       <change beforePath="$PROJECT_DIR$/../../../devSecOps/adamo/project/roles/rancher/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../devSecOps/adamo/project/roles/rancher/meta/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../devSecOps/adamo/project/roles/terraform/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../devSecOps/adamo/project/roles/terraform/meta/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../devSecOps/adamo/site.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/kstream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/1-init.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/3-stop.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/windows/1-init.bat" beforeDir="false" afterPath="$PROJECT_DIR$/demo/windows/1-init.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/windows/3-stop.bat" beforeDir="false" afterPath="$PROJECT_DIR$/demo/windows/3-stop.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/README-consumer.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/README-consumer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/README-ksql.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/README-ksql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/README-producer.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/README-producer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/images/ETL-Flow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/images/architecture.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +42,7 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../devSecOps/adamo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -65,39 +77,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "/home/sdouichi/Documents/devSecOps/adamo/model",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26456985",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sdouichi/Documents/training/code/adii-training/doc&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26456985&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/model" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/project/roles" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/env" />
-      <recent name="$PROJECT_DIR$/apps/kafka/producer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo/linux" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/env" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/env/envvars" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/inventory/hosts" />
       <recent name="$PROJECT_DIR$/../../../devSecOps/adamo/model" />
-      <recent name="$PROJECT_DIR$/../../../devSecOps/adamo" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.platform.hivemq: Compose Deployment">
+  <component name="RunManager" selected="Maven.domain-processor [spring-boot:run]">
     <configuration name="consumer [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
