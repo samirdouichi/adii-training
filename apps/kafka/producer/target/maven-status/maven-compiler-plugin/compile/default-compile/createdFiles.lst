@@ -1,0 +1,4 @@
+com/sdouichi/kafka/springbootkafkaproducerexample/SpringBootKafkaProducerExampleApplication.class
+com/sdouichi/kafka/springbootkafkaproducerexample/model/User.class
+com/sdouichi/kafka/springbootkafkaproducerexample/resource/UserResource.class
+com/sdouichi/kafka/springbootkafkaproducerexample/config/KakfaConfiguration.class

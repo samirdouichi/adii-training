@@ -1,0 +1,6 @@
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/Domain.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/DomainCrawlerService.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/DomainList.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/KafkaProducerConfig.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/DomainCrawlerApplication.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kstream/domain-crawler/src/main/java/com/sdouichi/domaincrawler/DomainCrawlerController.java

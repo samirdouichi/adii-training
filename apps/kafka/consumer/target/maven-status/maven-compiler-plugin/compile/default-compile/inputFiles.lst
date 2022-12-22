@@ -1,0 +1,4 @@
+/home/sdouichi/Documents/training/code/adii-training/apps/kafka/consumer/src/main/java/com/sdouichi/kafka/springbootkafkaconsumerexample/model/User.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kafka/consumer/src/main/java/com/sdouichi/kafka/springbootkafkaconsumerexample/listener/KafkaConsumer.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kafka/consumer/src/main/java/com/sdouichi/kafka/springbootkafkaconsumerexample/SpringBootKafkaConsumerExampleApplication.java
+/home/sdouichi/Documents/training/code/adii-training/apps/kafka/consumer/src/main/java/com/sdouichi/kafka/springbootkafkaconsumerexample/config/KafkaConfiguration.java

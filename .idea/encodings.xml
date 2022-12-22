@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/apps/fraud-checker-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/fraud-checker-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/fraud-checker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/fraud-checker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/fraud-ksql/read-article-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/fraud-ksql/read-article-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kafka/consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kafka/consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kafka/producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kafka/producer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/ksql/datagen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/ksql/datagen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/ksql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/ksql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kstream/domain-crawler/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kstream/domain-processor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/kstream/domain-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

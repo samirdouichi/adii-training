@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: schema-registry
+  namespace: kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: cp-registry
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: cp-registry
+    spec:
+      containers:
+      - env:
+        - name: SCHEMA_REGISTRY_HOST_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        - name: SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS
+          value: PLAINTEXT://rkedev-kafka-bootstrap:9092
+        - name: SCHEMA_REGISTRY_LISTENERS
+          value: http://0.0.0.0:8081
+        - name: SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL
+          value: PLAINTEXT
+        - name: SCHEMA_REGISTRY_ACCESS_CONTROL_ALLOW_METHODS
+          value: GET,POST,PUT,DELETE,OPTIONS
+        - name: SCHEMA_REGISTRY_ACCESS_CONTROL_ALLOW_ORIGIN
+          value: '*'
+        image: confluentinc/cp-schema-registry:6.1.0
+        imagePullPolicy: IfNotPresent
+        name: cp-registry-container
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+          
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cp-registry
+  name: schema-registry-client
+  namespace: kafka
+spec:
+  ports:
+  - name: schema-registry-client
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    name: cp-registry
+  type: ClusterIP

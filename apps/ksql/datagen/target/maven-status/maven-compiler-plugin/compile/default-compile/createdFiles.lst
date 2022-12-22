@@ -1,0 +1,8 @@
+com/sdouichi/datagen/event/OrderLine$Builder.class
+META-INF/spring-configuration-metadata.json
+com/sdouichi/datagen/DatagenApplication.class
+com/sdouichi/datagen/producer/DataProducer.class
+com/sdouichi/datagen/event/Order.class
+com/sdouichi/datagen/event/Order$Builder.class
+com/sdouichi/datagen/event/OrderLine.class
+com/sdouichi/datagen/config/OrderStreamConfig.class

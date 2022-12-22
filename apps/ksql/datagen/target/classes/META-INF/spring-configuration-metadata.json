@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "orders",
+      "type": "com.sdouichi.datagen.config.OrderStreamConfig",
+      "sourceType": "com.sdouichi.datagen.config.OrderStreamConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "orders.output-topic",
+      "type": "java.lang.String",
+      "sourceType": "com.sdouichi.datagen.config.OrderStreamConfig"
+    }
+  ],
+  "hints": []
+}

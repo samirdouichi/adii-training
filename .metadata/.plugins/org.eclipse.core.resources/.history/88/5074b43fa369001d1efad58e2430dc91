@@ -1,0 +1,85 @@
+package com.sdouichi.rt.streaming.kstreams.fraudchecker.model;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class Movement {
+
+    String id;
+    String card;
+    float amount;
+    long origin;
+    String site;
+    String device;
+    String createdAt;
+
+    public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCard() {
+		return card;
+	}
+
+	public void setCard(String card) {
+		this.card = card;
+	}
+
+	public float getAmount() {
+		return amount;
+	}
+
+	public void setAmount(float amount) {
+		this.amount = amount;
+	}
+
+	public long getOrigin() {
+		return origin;
+	}
+
+	public void setOrigin(long origin) {
+		this.origin = origin;
+	}
+
+	public String getSite() {
+		return site;
+	}
+
+	public void setSite(String site) {
+		this.site = site;
+	}
+
+	public String getDevice() {
+		return device;
+	}
+
+	public void setDevice(String device) {
+		this.device = device;
+	}
+
+	public String getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(String createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	@Override
+    public String toString() {
+        return "[id='" + id + '\'' +
+                ", card='" + card + '\'' +
+                ", amount=" + amount +
+                ", origin=" + origin +
+                ", site='" + site + '\'' +
+                ", device='" + device + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ']';
+    }
+}

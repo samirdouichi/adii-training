@@ -1,0 +1,4 @@
+com/sdouichi/kafka/springbootkafkaconsumerexample/SpringBootKafkaConsumerExampleApplication.class
+com/sdouichi/kafka/springbootkafkaconsumerexample/config/KafkaConfiguration.class
+com/sdouichi/kafka/springbootkafkaconsumerexample/model/User.class
+com/sdouichi/kafka/springbootkafkaconsumerexample/listener/KafkaConsumer.class

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ivanfranchin.researchservice&apos; to &apos;com.sdouichi.rt&apos;&#x0A;- Original project: &apos;read-article-service&apos;&#x0A;- Original element: &apos;read-article-service/src/test/java/com.ivanfranchin.researchservice&apos;&#x0A;- Renamed element: &apos;read-article-service/src/test/java/com.sdouichi.rt&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ivanfranchin.researchservice&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.ivanfranchin.researchservice" name="com.sdouichi.rt" qualified="false" references="true" stamp="1669235326214" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: ksql-server
+  name: ksql-server
+  namespace: kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ksql-server
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ksql-server
+    spec:
+      containers:
+      - env:
+        - name: KSQL_BOOTSTRAP_SERVERS
+          value: PLAINTEXT://rkedev-kafka-bootstrap:9092
+        - name: KSQL_KSQL_SERVICE_ID
+          value: ksql_service_1_
+        - name: KSQL_KSQL_SCHEMA_REGISTRY_URL
+          value: http://schema-registry-client:8081
+        - name: KSQL_LISTENERS
+          value: http://0.0.0.0:8088
+        - name: KSQL_JMX_PORT
+          value: "5555"
+        - name: KSQL_CONFLUENT_SUPPORT_METRICS_ENABLE
+          value: "false"
+        image: confluentinc/cp-ksqldb-server:7.0.1
+        imagePullPolicy: IfNotPresent
+        name: ksql-server
+        ports:
+        - containerPort: 8088
+          name: server
+          protocol: TCP
+        - containerPort: 5555
+          name: jmx
+          protocol: TCP
+ 
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ksql-server
+  name: ksql-server
+  namespace: kafka
+spec:
+  ports:
+  - port: 8088
+    protocol: TCP
+    targetPort: 8088
+  selector:
+    app: ksql-server
+  sessionAffinity: None
+  type: ClusterIP

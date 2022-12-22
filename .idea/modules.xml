@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../devSecOps/adamo/adamo.iml" filepath="$PROJECT_DIR$/../../../devSecOps/adamo/adamo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/adii-training.iml" filepath="$PROJECT_DIR$/.idea/adii-training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/kafka/consumer/consumer.iml" filepath="$PROJECT_DIR$/apps/kafka/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/ksql/datagen/datagen.iml" filepath="$PROJECT_DIR$/apps/ksql/datagen/datagen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/kstream/domain-crawler/domain-crawler.iml" filepath="$PROJECT_DIR$/apps/kstream/domain-crawler/domain-crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/kstream/domain-processor/domain-processor.iml" filepath="$PROJECT_DIR$/apps/kstream/domain-processor/domain-processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/kstream/domain-service/domain-service.iml" filepath="$PROJECT_DIR$/apps/kstream/domain-service/domain-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../devSecOps/dsops/dsops.iml" filepath="$PROJECT_DIR$/../../../devSecOps/dsops/dsops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/ksql/online-merchant.iml" filepath="$PROJECT_DIR$/apps/ksql/online-merchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps/kafka/producer/producer.iml" filepath="$PROJECT_DIR$/apps/kafka/producer/producer.iml" />
+    </modules>
+  </component>
+</project>

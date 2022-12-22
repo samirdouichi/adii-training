@@ -1,0 +1,6 @@
+com/sdouichi/domaincrawler/DomainList.class
+com/sdouichi/domaincrawler/Domain.class
+com/sdouichi/domaincrawler/DomainCrawlerController.class
+com/sdouichi/domaincrawler/KafkaProducerConfig.class
+com/sdouichi/domaincrawler/DomainCrawlerService.class
+com/sdouichi/domaincrawler/DomainCrawlerApplication.class

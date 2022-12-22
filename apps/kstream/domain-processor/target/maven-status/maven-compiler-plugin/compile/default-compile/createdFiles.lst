@@ -1,0 +1,3 @@
+com/sdouichi/domainprocessor/DomainProcessorApplication.class
+com/sdouichi/domainprocessor/DomainKafkaProcessor.class
+com/sdouichi/domaincrawler/Domain.class

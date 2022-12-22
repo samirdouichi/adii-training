@@ -1,0 +1,957 @@
+# Created at 2022-11-29T19:35:11.361
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+
+# Created at 2022-11-29T19:35:11.965
+Unexpected IOException with stream: 2022-11-29 19:35:11.964  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker: Nom ou service inconnu
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:12.914
+Unexpected IOException with stream: 2022-11-29 19:35:12.913  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:13.729
+Unexpected IOException with stream: 2022-11-29 19:35:13.727  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:14.756
+Unexpected IOException with stream: 2022-11-29 19:35:14.755  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:15.953
+Unexpected IOException with stream: 2022-11-29 19:35:15.952  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:16.836
+Unexpected IOException with stream: 2022-11-29 19:35:16.832  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:17.849
+Unexpected IOException with stream: 2022-11-29 19:35:17.846  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:19.051
+Unexpected IOException with stream: 2022-11-29 19:35:19.050  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:19.923
+Unexpected IOException with stream: 2022-11-29 19:35:19.922  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:21.073
+Unexpected IOException with stream: 2022-11-29 19:35:21.071  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:22.281
+Unexpected IOException with stream: 2022-11-29 19:35:22.279  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker: Nom ou service inconnu
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:23.255
+Unexpected IOException with stream: 2022-11-29 19:35:23.253  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:24.406
+Unexpected IOException with stream: 2022-11-29 19:35:24.406  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:25.330
+Unexpected IOException with stream: 2022-11-29 19:35:25.329  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:26.413
+Unexpected IOException with stream: 2022-11-29 19:35:26.411  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:27.318
+Unexpected IOException with stream: 2022-11-29 19:35:27.316  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:28.143
+Unexpected IOException with stream: 2022-11-29 19:35:28.142  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:29.152
+Unexpected IOException with stream: 2022-11-29 19:35:29.151  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:30.009
+Unexpected IOException with stream: 2022-11-29 19:35:30.008  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:31.098
+Unexpected IOException with stream: 2022-11-29 19:35:31.096  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:31.333
+Unexpected IOException with stream: 2022-11-29 19:35:31.332  INFO 15846 --- [| adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1669746931331) timed out at 1669746931332 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+
+
+
+# Created at 2022-11-29T19:35:31.939
+Unexpected IOException with stream: 2022-11-29 19:35:31.938  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:32.804
+Unexpected IOException with stream: 2022-11-29 19:35:32.803  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker: Nom ou service inconnu
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:33.924
+Unexpected IOException with stream: 2022-11-29 19:35:33.923  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:35.057
+Unexpected IOException with stream: 2022-11-29 19:35:35.056  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:36.175
+Unexpected IOException with stream: 2022-11-29 19:35:36.174  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:37.092
+Unexpected IOException with stream: 2022-11-29 19:35:37.090  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:38.172
+Unexpected IOException with stream: 2022-11-29 19:35:38.170  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:39.061
+Unexpected IOException with stream: 2022-11-29 19:35:39.060  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:40.020
+Unexpected IOException with stream: 2022-11-29 19:35:40.019  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:40.939
+Unexpected IOException with stream: 2022-11-29 19:35:40.938  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:41.984
+Unexpected IOException with stream: 2022-11-29 19:35:41.982  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:43.143
+Unexpected IOException with stream: 2022-11-29 19:35:43.142  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker: Nom ou service inconnu
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:44.237
+Unexpected IOException with stream: 2022-11-29 19:35:44.235  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:45.259
+Unexpected IOException with stream: 2022-11-29 19:35:45.258  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:46.313
+Unexpected IOException with stream: 2022-11-29 19:35:46.312  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:47.492
+Unexpected IOException with stream: 2022-11-29 19:35:47.490  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:48.435
+Unexpected IOException with stream: 2022-11-29 19:35:48.434  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:49.264
+Unexpected IOException with stream: 2022-11-29 19:35:49.263  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:50.179
+Unexpected IOException with stream: 2022-11-29 19:35:50.178  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:51.321
+Unexpected IOException with stream: 2022-11-29 19:35:51.320  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:52.365
+Unexpected IOException with stream: 2022-11-29 19:35:52.364  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:53.251
+Unexpected IOException with stream: 2022-11-29 19:35:53.250  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker: Nom ou service inconnu
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:54.189
+Unexpected IOException with stream: 2022-11-29 19:35:54.188  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:55.089
+Unexpected IOException with stream: 2022-11-29 19:35:55.089  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:56.243
+Unexpected IOException with stream: 2022-11-29 19:35:56.242  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
+# Created at 2022-11-29T19:35:57.438
+Unexpected IOException with stream: 2022-11-29 19:35:57.437  WARN 15846 --- [| adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Error connecting to node broker:9092 (id: 1 rack: null)
+
+java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524) ~[na:na]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:962) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:294) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.sendEligibleCalls(KafkaAdminClient.java:1018) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.processRequests(KafkaAdminClient.java:1260) ~[kafka-clients-2.5.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable.run(KafkaAdminClient.java:1203) ~[kafka-clients-2.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+
+
